@@ -1,0 +1,19 @@
+{
+  "name": "playlisteer",
+  "version": "0.0.0",
+  "description": "Playlisteer is a system that pitches your music to trending Spotify playlists & large SoundCloud channels.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playlisteer/playlisteer.git"
+  },
+  "author": "Operst, LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/playlisteer/playlisteer/issues"
+  },
+  "homepage": "https://playlisteer.com"
+}
