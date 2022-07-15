@@ -1,19 +1,34 @@
 {
   "name": "playlisteer",
-  "version": "0.0.0",
-  "description": "Playlisteer is a system that pitches your music to trending Spotify playlists & large SoundCloud channels.",
-  "main": "index.js",
+  "version": "0.0.2",
+  "description": "Playlisteer is a service that pitches your music to trending Spotify playlists & large SoundCloud channels",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run prepare && ./node_modules/mocha/bin/mocha test/ --recursive --timeout=10000",
+    "prepare": "node -e 'require(`prepare-package`)'"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/playlisteer/playlisteer.git"
+    "url": "git+https://github.com/playlisteer/playlisteer"
   },
-  "author": "Operst, LLC",
-  "license": "ISC",
+  "keywords": [
+    "playlisteer",
+    "spotify playlisting",
+    "soundcloud repost service",
+    "nodejs",
+    "front end"
+  ],
+  "author": "ITW Creative Works",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/playlisteer/playlisteer/issues"
   },
-  "homepage": "https://playlisteer.com"
+  "homepage": "https://playlisteer.com",
+  "devDependencies": {
+    "mocha": "^8.4.0",
+    "prepare-package": "^0.0.12"
+  }
 }
